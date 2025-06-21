@@ -86,7 +86,7 @@ export default function HomePage() {
 
         // Enhanced logic for scroll-based switching
         if (sectionInView) {
-          if (scrollWithinSection < 0.5) {
+          if (scrollWithinSection < 0.7) {
             activeSection = "passenger"
             newActiveVehicleType = "passenger"
           } else {
@@ -480,13 +480,12 @@ export default function HomePage() {
 
         </div>
       </section>
-
-      {/* Contact Section */}
-      <section
-        className="py-16 px-4 md:px-6 lg:px-8 flex items-center justify-center"
+ {/* Contact Section */}
+ <section
+        className="py-16 px-16 md:px-24 lg:px-32 xl:px-48 2xl:px-64 flex items-center justify-center"
         style={{ backgroundColor: "#0067B1" }}
       >
-        <div className="mx-auto" style={{ width: "1000px", height: "433px" }}>
+        <div className="mx-auto w-full max-w-4xl" style={{ height: "433px" }}>
           <div className="grid lg:grid-cols-2 gap-16 items-start h-full">
             {/* Left Side - Contact Information */}
             <div className="text-white flex flex-col justify-center h-full">
@@ -527,7 +526,7 @@ export default function HomePage() {
                     type="text"
                     name="fullName"
                     placeholder="Full name"
-                    className="w-full bg-transparent border-0 border-b border-white/30 px-0 py-3 text-white placeholder:text-white/60 focus:border-white focus:outline-none text-base"
+                    className="w-full bg-transparent border-0 border-b border-white/30 px-0 py-3 text-white placeholder:text-white/80 focus:border-white focus:outline-none text-base text-sm"
                     required
                   />
                 </div>
@@ -538,7 +537,7 @@ export default function HomePage() {
                     type="email"
                     name="email"
                     placeholder="Email"
-                    className="w-full bg-transparent border-0 border-b border-white/30 px-0 py-3 text-white placeholder:text-white/60 focus:border-white focus:outline-none text-base"
+                    className="w-full bg-transparent border-0 border-b border-white/30 px-0 py-3 text-white placeholder:text-white/80 focus:border-white focus:outline-none text-base text-sm"
                     required
                   />
                 </div>
@@ -549,7 +548,7 @@ export default function HomePage() {
                     type="text"
                     name="company"
                     placeholder="Company"
-                    className="w-full bg-transparent border-0 border-b border-white/30 px-0 py-3 text-white placeholder:text-white/60 focus:border-white focus:outline-none text-base"
+                    className="w-full bg-transparent border-0 border-b border-white/30 px-0 py-3 text-white placeholder:text-white/80 focus:border-white focus:outline-none text-base text-sm"
                   />
                 </div>
 
@@ -559,25 +558,26 @@ export default function HomePage() {
                     name="message"
                     placeholder="Message"
                     rows={3}
-                    className="w-full bg-transparent border-0 border-b border-white/30 px-0 py-3 text-white placeholder:text-white/60 focus:border-white focus:outline-none resize-none text-base"
+                    className="w-full bg-transparent border-0 border-b border-white/30 px-0 py-3 text-white placeholder:text-white/80 focus:border-white focus:outline-none resize-none text-base text-sm"
                     required
                   />
                 </div>
 
                 {/* Submit Button */}
                 <div className="pt-4">
-                  <button
-                    type="submit"
-                    className="bg-transparent border border-white text-white hover:bg-white hover:text-black px-9 py-2 rounded-full text-base font-medium transition-all duration-300 text-sm"
-                  >
-                    Send
-                  </button>
+                <button
+              type="submit"
+              className="bg-transparent border border-white text-white hover:bg-white hover:text-black px-9 py-2 rounded-full text-base font-medium transition-all duration-300 text-sm"
+            >
+              Send
+            </button>
                 </div>
               </form>
             </div>
           </div>
         </div>
       </section>
+
 
       {/* Footer */}
       <Footer />
