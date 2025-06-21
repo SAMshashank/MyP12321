@@ -1,4 +1,4 @@
-(LIVE)[https://my-p12321.vercel.app/]
+LIVE:[https://my-p12321.vercel.app/]
 
 # Supreme Group Website Clone
 
