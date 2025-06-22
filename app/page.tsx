@@ -482,11 +482,12 @@ export default function HomePage() {
       </section>
  {/* Contact Section */}
  <section
-        className="py-16 px-16 md:px-24 lg:px-32 xl:px-48 2xl:px-64 flex items-center justify-center"
-        style={{ backgroundColor: "#0067B1" }}
-      >
-        <div className="mx-auto w-full max-w-4xl" style={{ height: "433px" }}>
-          <div className="grid lg:grid-cols-2 gap-16 items-start h-full">
+  className="py-16 px-16 md:px-24 lg:px-32 xl:px-48 2xl:px-64 flex items-center justify-center"
+  style={{ backgroundColor: "#0067B1" }}
+>
+<div className="mx-auto w-full max-w-4xl h-[800px] md:h-[433px]">
+
+    <div className="grid lg:grid-cols-2 gap-16 items-start h-full">
             {/* Left Side - Contact Information */}
             <div className="text-white flex flex-col justify-center h-full">
               <div className="mb-6">
