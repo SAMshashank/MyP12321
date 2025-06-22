@@ -10,6 +10,26 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  
+  /* Custom classes for inline styles */
+  .text-cyan-blue {
+    color: #00BFFF;
+  }
+  
+  .gradient-text {
+    background: linear-gradient(45deg, #ffffff, #60a5fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .glow-shadow {
+    box-shadow: 0 0 20px rgba(34, 211, 238, 0.6);
+  }
+  
+  .cyan-glow {
+    filter: drop-shadow(0 0 10px rgba(34, 211, 238, 0.3));
+  }
 }
 
 @layer base {
