@@ -35,7 +35,7 @@ export default function Footer() {
           
             <Link href="/" className="flex items-center space-x-3 mb-8">
             <img
-              src="https://supreme-group.vercel.5app/static/media/logo.68f5b8493efb88f7cd65756bf67a1f5b.svg"
+              src="./"
               alt=""
               className="h-226 w-63"
             />
